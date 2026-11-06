@@ -23,8 +23,6 @@ The menu starts in [`src/config/navigation.ts`](src/config/navigation.ts). Chang
 - `/notes/quiet-tools` for a page
 - `https://example.com` for another site
 
-`Desk` is included and hidden. Set `hidden` to `false`, or turn Hide off in the editor, to show it.
-
-On the page, **Edit menu** changes the same menu and saves it in this browser. Copy the TypeScript from the editor into `navigation.ts` to keep it in the project. **Reset to file** loads the file again.
+`Desk` is included and hidden. Set `hidden` to `false` to show it.
 
 Page copy lives in [`src/config/content.ts`](src/config/content.ts).

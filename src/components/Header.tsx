@@ -41,7 +41,7 @@ function Submenu({ item, pathname, activeId }: { item: NavLink; pathname: string
 }
 
 export function Header() {
-  const { nav, customized } = useNavigation();
+  const { nav } = useNavigation();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -137,10 +137,6 @@ export function Header() {
           </nav>
 
           <div className="header-actions">
-            <button type="button" className="edit-link" onClick={() => window.dispatchEvent(new Event("ida:edit-nav"))}>
-              Edit menu
-              {customized ? <i className="edit-dot" aria-hidden="true" /> : null}
-            </button>
             {showCta ? (
               <SiteLink href={nav.cta.href} className="cta" onNavigate={() => setOpen(false)}>
                 {nav.cta.label}
@@ -189,16 +185,6 @@ export function Header() {
               ) : null}
             </div>
           ))}
-        <button
-            type="button"
-            className="mobile-edit"
-            onClick={() => {
-              setOpen(false);
-              window.dispatchEvent(new Event("ida:edit-nav"));
-            }}
-          >
-            Edit menu
-          </button>
         </nav>
       </div>
     </>

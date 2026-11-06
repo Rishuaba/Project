@@ -1,9 +1,7 @@
 /**
  * Edit this file to change the menu.
  *
- * The header, the footer, and the on-page editor all start from here.
- * If you have already saved changes in the browser, open Edit menu
- * and choose Reset to file to load this file again.
+ * The header and the footer both read from here. Reload the page after a change.
  *
  * href examples:
  *   "/#work"            a section on the home page

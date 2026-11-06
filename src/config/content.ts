@@ -201,7 +201,7 @@ export const faqs = [
   {
     question: "How do I change the menu?",
     answer:
-      "Use Edit menu on any page, or edit src/config/navigation.ts. You can rename links, point them at sections or pages, reorder them, nest a dropdown, and hide any item. Reset in the editor loads the file again.",
+      "Edit src/config/navigation.ts. You can rename links, point them at sections or pages, reorder them, nest a dropdown, and hide any item. Reload the page after saving the file.",
   },
   {
     question: "What on this site is real?",

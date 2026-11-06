@@ -1,7 +1,5 @@
 import type { NavLink, SiteNavigation } from "@/config/navigation";
 
-export const NAV_STORAGE_KEY = "ida.navigation";
-
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
@@ -153,24 +151,6 @@ export function linkIsCurrent(link: NavLink, pathname: string, activeId: string)
 
   if (parts.pathname === "/") return false;
   return pathname === parts.pathname || pathname.startsWith(`${parts.pathname}/`);
-}
-
-export function collectIds(items: NavLink[]): string[] {
-  return items.flatMap((item) => [item.id, ...collectIds(item.children ?? [])]);
-}
-
-export function createNavLink(existing: string[], child = false): NavLink {
-  let id = "";
-  do {
-    id = `link-${Math.random().toString(36).slice(2, 8)}`;
-  } while (existing.includes(id));
-  return child
-    ? { id, label: "New link", href: "/#top", note: "Note" }
-    : { id, label: "New link", href: "/#top" };
-}
-
-export function toNavigationSource(nav: SiteNavigation): string {
-  return `export const navigation: SiteNavigation = ${JSON.stringify(nav, null, 2)};\n`;
 }
 
 export function menuLabel(label: string): string {

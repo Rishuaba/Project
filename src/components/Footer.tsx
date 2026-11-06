@@ -48,8 +48,8 @@ export function Footer() {
       </div>
       <div className="wrap footer-colophon">
         <p>
-          A demonstration site. {profile.name} is a fictional practice. Edit the menu in{" "}
-          <code>src/config/navigation.ts</code>, or with Edit menu on this page.
+          A demonstration site. {profile.name} is a fictional practice. The menu is set in{" "}
+          <code>src/config/navigation.ts</code>.
         </p>
       </div>
     </footer>

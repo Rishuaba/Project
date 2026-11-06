@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Instrument_Serif, Outfit, Syne } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { NavEditor } from "@/components/NavEditor";
 import { NavigationProvider } from "@/components/NavigationProvider";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { navigation } from "@/config/navigation";
@@ -36,7 +35,7 @@ export const metadata: Metadata = {
     template: "%s — Ida Voss",
   },
   description:
-    "A demonstration studio site with an editable menu, restrained motion, and smooth scrolling.",
+    "A demonstration studio site with a file-based menu, restrained motion, and smooth scrolling.",
 };
 
 export const viewport: Viewport = {
@@ -54,7 +53,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           <main>{children}</main>
           <Footer />
-          <NavEditor />
         </NavigationProvider>
       </body>
     </html>

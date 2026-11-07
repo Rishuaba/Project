@@ -31,8 +31,8 @@ const serif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: {
-    default: "Ida Voss",
-    template: "%s — Ida Voss",
+    default: "Sharukh",
+    template: "%s — Sharukh",
   },
   description:
     "A demonstration studio site with a file-based menu, restrained motion, and smooth scrolling.",

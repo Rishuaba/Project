@@ -37,12 +37,11 @@ export type Note = {
 };
 
 export const profile = {
-  name: "Ida Voss",
-  role: "Independent product studio",
+  name: "Sharukh",
   location: "Lisbon",
   since: "2019",
-  statement: "Building quiet tools people keep.",
-  lede: "I design small software, stay through the first season of real use, and publish the note while the work is still warm. The desk is one person. The record is public.",
+  statement: "Read Write And Repeat",
+  lede: "Hey There, Its Nice To see You here. Myself Sharukh, i love building New website and app. exploring Web3 world. Not a financial advisor.",
   now: "Setting type for a long note about maintenance.",
   hours: "Tue–Thu, by appointment",
 };
@@ -206,7 +205,7 @@ export const faqs = [
   {
     question: "What on this site is real?",
     answer:
-      "The site is a working demonstration. Ida Voss is a fictional practice, so the navigation, motion, and scroll can be tried on their own.",
+      "The site is a working demonstration, so the navigation, motion, and scroll can be tried on their own.",
   },
 ];
 

@@ -44,7 +44,7 @@ export type SiteNavigation = {
 
 export const navigation: SiteNavigation = {
   brand: {
-    name: "Ida",
+    name: "Sharukh",
     href: "/#top",
   },
   cta: {

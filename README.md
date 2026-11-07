@@ -1,4 +1,4 @@
-# Ida Voss
+# Sharukh
 
 A Next.js studio site with an editable menu, restrained motion, and smooth scrolling.
 

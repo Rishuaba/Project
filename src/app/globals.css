@@ -353,15 +353,6 @@ main :is(section, article)[id] { scroll-margin-top: 5.5rem; }
   color: var(--gold);
 }
 
-.hero-mark {
-  display: inline-block;
-  width: clamp(2.6rem, 5vw, 3.4rem);
-  height: auto;
-  margin: 0 0.1rem 0.35rem;
-  vertical-align: middle;
-  color: var(--ink);
-}
-
 .lede {
   max-width: 38rem;
   color: var(--muted);

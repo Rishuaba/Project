@@ -7,30 +7,20 @@ import { WorkList } from "@/components/WorkList";
 import { YearGrid } from "@/components/YearGrid";
 import { faqs, milestones, notes, places, profile, stats, studio, work } from "@/config/content";
 
-function Mark() {
-  return (
-    <svg className="hero-mark" viewBox="0 0 64 40" aria-hidden="true">
-      <rect width="64" height="40" rx="20" fill="currentColor" />
-      <circle cx="24" cy="20" r="6" fill="none" stroke="var(--paper)" strokeWidth="1.6" />
-      <path d="M36 14h12M36 20h12M36 26h8" stroke="var(--gold-2)" strokeWidth="1.6" strokeLinecap="round" />
-    </svg>
-  );
-}
-
 export function HomeView() {
   return (
     <>
       <section className="hero" id="top">
         <div className="wrap">
           <p className="kicker rise" style={{ animationDelay: "0.05s" }}>
-            <BrandName /> · {profile.role}
+            <BrandName />
           </p>
           <h1>
             <span className="rise" style={{ animationDelay: "0.12s" }}>
-              Building <Mark /> <em>quiet</em>
+              Read Write And
             </span>
             <span className="rise" style={{ animationDelay: "0.24s" }}>
-              tools people keep.
+              <em>Repeat</em>
             </span>
           </h1>
           <p className="lede rise" style={{ animationDelay: "0.36s" }}>

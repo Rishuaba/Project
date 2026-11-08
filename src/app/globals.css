@@ -428,6 +428,8 @@ main :is(section, article)[id] { scroll-margin-top: 5.5rem; }
   align-items: end;
 }
 
+.section-head-solo { grid-template-columns: 1fr; }
+
 .section-head h2,
 .studio-intro h2,
 .visit h2,

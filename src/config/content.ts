@@ -42,15 +42,8 @@ export const profile = {
   since: "2019",
   statement: "Read Write And Repeat",
   lede: "Hey There, Its Nice To see You here. Myself Sharukh, i love building New website and app. exploring Web3 world. Not a financial advisor.",
-  now: "Setting type for a long note about maintenance.",
   hours: "Tue–Thu, by appointment",
 };
-
-export const stats = [
-  { value: "14", label: "tools still running" },
-  { value: "36", label: "field notes" },
-  { value: "7", label: "years at one desk" },
-];
 
 export const work: WorkItem[] = [
   {

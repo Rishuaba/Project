@@ -5,7 +5,7 @@ import { StudioStack } from "@/components/StudioStack";
 import { VisitForm } from "@/components/VisitForm";
 import { WorkList } from "@/components/WorkList";
 import { YearGrid } from "@/components/YearGrid";
-import { faqs, milestones, notes, places, profile, stats, studio, work } from "@/config/content";
+import { faqs, milestones, notes, places, profile, studio, work } from "@/config/content";
 
 export function HomeView() {
   return (
@@ -28,34 +28,17 @@ export function HomeView() {
           </p>
           <div className="hero-actions rise" style={{ animationDelay: "0.48s" }}>
             <SiteLink href="/#work" className="cta">
-              See the work
-            </SiteLink>
-            <SiteLink href="/#notes" className="text-link">
-              Read the notes
+              See All Posts
             </SiteLink>
           </div>
-          <p className="now rise" style={{ animationDelay: "0.58s" }}>
-            <span>Now</span>
-            {profile.now}
-          </p>
-        </div>
-        <div className="wrap stats">
-          {stats.map((stat) => (
-            <p key={stat.label}>
-              <strong>{stat.value}</strong>
-              <span>{stat.label}</span>
-            </p>
-          ))}
         </div>
       </section>
 
       <section className="section" id="work">
         <div className="wrap">
           <Reveal>
-            <p className="kicker">Work</p>
-            <div className="section-head">
-              <h2>A short list, with the status beside the name.</h2>
-              <p>Shipped tools, the studies written next to them, and experiments still on the bench.</p>
+            <div className="section-head section-head-solo">
+              <h2>Latest Blog</h2>
             </div>
           </Reveal>
           <WorkList items={work} />
@@ -112,10 +95,6 @@ export function HomeView() {
           </Reveal>
           <div className="bento">
             <article>
-              <p className="kicker">Now</p>
-              <h3>{profile.now}</h3>
-            </article>
-            <article>
               <p className="kicker">Place</p>
               <h3>{profile.location}</h3>
               <p>{profile.hours}</p>
@@ -150,9 +129,6 @@ export function HomeView() {
             <h2>A week spent only on maintenance.</h2>
             <p>The release was small. The record of it is the useful part.</p>
           </div>
-          <SiteLink href="/notes/maintenance-week" className="cta cta-light">
-            Read the note
-          </SiteLink>
         </div>
       </section>
 
